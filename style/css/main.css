@@ -15,10 +15,11 @@
 }
 .card_blocks {
   padding: 20px 0;
-  display: grid;
-  grid-template-columns: repeat(2, -webkit-max-content);
-  grid-template-columns: repeat(2, max-content);
-  gap: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 .card_block-right {
   border-left: 2px solid #FFFFFF;
@@ -73,6 +74,10 @@
   border-radius: 5px;
   padding: 4px 10px;
   font-size: 14px;
+}
+
+.image {
+  margin-top: 5%;
 }
 
 body {

@@ -8,10 +8,9 @@
     padding: 20px;
 
     &_blocks {
-        padding:20px 0;
-        display: grid;
-        grid-template-columns: repeat(2, max-content);
-        gap: 28px;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-around;
     }
 
     &_block-right {
@@ -52,4 +51,8 @@
 
 .input {
     @include input;
+}
+
+.image {
+    margin-top: 5%;
 }
