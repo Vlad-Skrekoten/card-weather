@@ -1,0 +1,55 @@
+@import"../utils/mixins";
+
+.card {
+    @include card;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    &_blocks {
+        padding:20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        gap: 28px;
+    }
+
+    &_block-right {
+        @include right;
+        display: grid;
+        gap: 10px;
+        padding: 20px;
+    }
+}
+
+.type_weather {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.country {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.temperature {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.search {
+    @include button;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    &:active {
+        transform: scale(1);
+    }
+}
+
+.input {
+    @include input;
+}
