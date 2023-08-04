@@ -13,6 +13,11 @@
         justify-content: space-around;
     }
 
+    &_block-left {
+        display: grid;
+        align-items: center;
+    }
+
     &_block-right {
         @include right;
         display: grid;
@@ -22,14 +27,8 @@
 }
 
 .type_weather {
-    font-size: 16px;
+    font-size: calc(16px + 8 * (100vw / 1440));
     font-weight: 500;
-}
-
-.country {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 700;
 }
 
 .temperature {
@@ -53,6 +52,30 @@
     @include input;
 }
 
-.image {
-    margin-top: 5%;
+img {
+    width: 100%;
+    background-position: center;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.country {
+    font-size: calc(20px + 12 * (100vw / 1440));
+    text-align: center;
+}
+
+@media (min-width:1440px) {
+    .type_weather {
+        font-size: 24px;
+    }
+
+    .country {
+        font-size: 32px;
+    }
 }

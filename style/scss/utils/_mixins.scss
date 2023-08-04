@@ -14,7 +14,9 @@
 }
 
 @mixin button {
-    padding: 10px 20px;
+    width: 100%;
+    max-width: 80px;
+    padding: 3px 10px;
     color: $white;
     background: #5983dc;
     border-radius: 5px;
@@ -27,6 +29,9 @@
 
 @mixin input {
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 10px;
     font-size: 14px;
+    max-width: 200px;
+    width: 100%;
+    margin-right: 5%;
 }
