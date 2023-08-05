@@ -19,7 +19,6 @@
     }
 
     &_block-right {
-        @include right;
         display: grid;
         gap: 10px;
         padding: 20px;
@@ -56,6 +55,11 @@ img {
     width: 100%;
     background-position: center;
     overflow: hidden;
+    transition: transform .3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .header {

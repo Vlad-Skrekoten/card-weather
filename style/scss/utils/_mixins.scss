@@ -9,10 +9,6 @@
     background-color: #ffffff1b;
 }
 
-@mixin right {
-    border-left: 2px solid $white;
-}
-
 @mixin button {
     width: 100%;
     max-width: 80px;
